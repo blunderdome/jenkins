@@ -49,7 +49,7 @@ THE SOFTWARE.
     <j:if test="${app.quietingDown}">
       <tr>
         <td class="pane" colspan="2" style="white-space: normal;">
-          ${%Jenkins is going to shut down. No further builds will be performed.}
+          ${%Jenkins is going to restart. No new builds will be started.}
           <j:if test="${h.hasPermission(app.ADMINISTER)}">
             <f:link href="${rootURL}/cancelQuietDown" post="true">(${%cancel})</f:link>
           </j:if>
